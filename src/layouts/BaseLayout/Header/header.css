@@ -1,0 +1,13 @@
+.header_wrapper {
+  height: 64px;
+  display: flex;
+  border-bottom: 0.5px solid #d3e4d5;
+}
+
+/* .find_talent_dropdown {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  margin-top: 64px;
+  background-color: blueviolet;
+} */

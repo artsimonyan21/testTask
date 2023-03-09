@@ -1,0 +1,26 @@
+{
+  "title": "Browse talent by category",
+  "sub_title": "Looking for work? Browse jobs",
+  "categories": [
+    {
+      "title": "",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "",
+      "rating": 4.5,
+      "skill_count": 345
+    }
+  ]
+}

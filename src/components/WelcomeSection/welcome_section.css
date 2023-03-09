@@ -1,0 +1,51 @@
+.welcome_section_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.welcome_section_description_wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.welcome_section_description_wrapper > h1 > span {
+  color: #14a800;
+  font-size: 80px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+.welcome_section_description_wrapper > p {
+  color: #5e6d55;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.welcome_section_description_wrapper > button {
+  width: 140px;
+  height: 40px;
+  background-color: #14a800;
+  margin-top: 20px;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.welcome_section_description_wrapper > button:hover {
+  background-color: #3c8224;
+  transition: 0.3s;
+}
+
+.welcome_section_img {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_section_img_wrapper > img {
+  width: 480px;
+  height: 480px;
+}
