@@ -1,0 +1,27 @@
+.categoryes_container {
+  width: 348px;
+  height: 134px;
+  padding: 20px 20px 52px 20px;
+  background-color: #f2f7f2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.categoryes_container :hover {
+  background-color: #e4ebe4;
+  transition: 0.2s;
+}
+
+.one_category_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category_pill_title {
+  font-size: 25px;
+}
+
+.category_rating_wrapper > :first-child {
+  margin-right: 40px;
+}

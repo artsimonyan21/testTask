@@ -3,22 +3,42 @@
   "sub_title": "Looking for work? Browse jobs",
   "categories": [
     {
-      "title": "",
+      "title": "Development & IT",
+      "rating": 4.85,
+      "skill_count": 1853
+    },
+    {
+      "title": "Development & IT",
       "rating": 4.5,
       "skill_count": 345
     },
     {
-      "title": "",
+      "title": "Development & IT",
       "rating": 4.5,
       "skill_count": 345
     },
     {
-      "title": "",
+      "title": "Writing & Translation",
       "rating": 4.5,
       "skill_count": 345
     },
     {
-      "title": "",
+      "title": "Admin & Customer Support",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "Finance & Accounting",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "Engineering & Architecture",
+      "rating": 4.5,
+      "skill_count": 345
+    },
+    {
+      "title": "Legal",
       "rating": 4.5,
       "skill_count": 345
     }

@@ -1,4 +1,4 @@
-import './base_dropdown.css';
+import "./base_dropdown.css";
 
 const BaseDropdown = ({ title, children }) => {
   // const mouseOver = (event) => {
@@ -7,8 +7,8 @@ const BaseDropdown = ({ title, children }) => {
 
   return (
     <div>
-      <p className="base_dropdown_title">{title}</p>
-      <div className="base_dropdown_children">{children}</div>
+      <p className='base_dropdown_title'>{title}</p>
+      <div className='base_dropdown_children'>{children}</div>
     </div>
   );
 };

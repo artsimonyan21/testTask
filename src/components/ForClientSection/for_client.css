@@ -1,0 +1,19 @@
+.for_client_section {
+  width: 100%;
+  height: 535px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-image: url("https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale/brontes/delivery-models/find-talent-2x.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.for_client_section > p {
+  margin-bottom: 100px;
+}
+
+.for_client_titles {
+  margin-bottom: 30px;
+}

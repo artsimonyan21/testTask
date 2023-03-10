@@ -1,26 +1,28 @@
 .welcome_section_wrapper {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding: 20px;
+  justify-content: space-between;
+  margin-top: 41px;
+  padding-bottom: 80px;
 }
 
 .welcome_section_description_wrapper {
-  width: 50%;
+  width: 40%;
   height: 100%;
+  padding: 0 15px;
 }
 
 .welcome_section_description_wrapper > h1 > span {
   color: #14a800;
   font-size: 80px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 
 .welcome_section_description_wrapper > p {
   color: #5e6d55;
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .welcome_section_description_wrapper > button {
@@ -38,14 +40,12 @@
   transition: 0.3s;
 }
 
-.welcome_section_img {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.welcome_section_img_wrapper {
+  width: 480px;
+  height: 450px;
+  padding: 0 15px;
 }
 .welcome_section_img_wrapper > img {
-  width: 480px;
-  height: 480px;
+  width: 100%;
+  height: 100%;
 }

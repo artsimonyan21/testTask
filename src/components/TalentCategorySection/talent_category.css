@@ -1,0 +1,20 @@
+.talent_category_section {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.talent_categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.talent_category_section > h1 {
+  font-size: 45px;
+  margin: 64px 0 12px;
+}
+
+.talent_category_subtitle {
+  margin-bottom: 40px;
+  color: #5e6d55;
+  font-size: 22px;
+}

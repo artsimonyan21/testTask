@@ -1,12 +1,14 @@
-import Header from './Header';
-import './base_layout.css';
+import Header from "./Header";
+import "./base_layout.css";
 
 const BaseLayout = ({ children }) => {
   return (
-    <div>
+    <>
       <Header />
-      <div>{children}</div>
-    </div>
+      <div className='base_layout_wrapper'>
+        <div>{children}</div>
+      </div>
+    </>
   );
 };
 
