@@ -1,0 +1,37 @@
+.for_ucraine_section {
+  margin-top: 100px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #e4ebe4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.for_ucraine_desc_wrapper {
+  width: 70%;
+  height: 100%;
+  padding: 30px;
+}
+
+.for_ucraine_desc_wrapper > h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.for_ucraine_desc_wrapper > p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.for_ucraine_desc_wrapper > a {
+  display: block;
+  text-decoration: none;
+  width: 133px;
+  height: 40px;
+  border: 1px solid #14a800;
+  border-radius: 20px;
+  color: #14a800;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}

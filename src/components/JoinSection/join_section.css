@@ -61,6 +61,10 @@
   color: white;
 }
 
+.join_section_href_wrapper > :first-child:hover {
+  background-color: #14a800;
+}
+
 .join_section_href_wrapper > :last-child {
   width: 181px;
   color: #108a00;

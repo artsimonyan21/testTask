@@ -1,0 +1,47 @@
+.skils_catalog_section {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.skils_catalog_wrapper {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.skils_catalog_wrapper :first-child {
+  color: #14a800 !important;
+}
+
+.skils_catalog_wrapper > h3 {
+  font-size: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: #d5e0d5;
+}
+
+.skils_catalog_wrapper > h3:hover {
+  color: #14a800;
+}
+
+.skils_colum_1 {
+  width: 30%;
+}
+
+.ul_catalog {
+  list-style-type: none;
+}
+.ul_catalog > li {
+  margin-bottom: 8px;
+}
+.ul_catalog > li > a {
+  text-decoration: none;
+  color: #5e6d55;
+  font-size: 25px;
+}
+.ul_catalog > li > a:hover {
+  color: #14a800;
+}

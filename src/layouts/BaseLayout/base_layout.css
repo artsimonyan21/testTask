@@ -1,8 +1,9 @@
 .base_layout_wrapper {
   display: flex;
   justify-content: center;
+  padding-top: 64px;
 }
 
 .base_layout_wrapper > div {
-  width: 80%;
+  width: 92%;
 }

@@ -2,11 +2,13 @@
   width: 100%;
   display: flex;
   border-radius: 10px;
+  overflow: hidden;
   background-color: #13544e;
 }
 
 .good_companies_description {
-  width: 60%;
+  /* width: 60%; */
+  flex-grow: 1;
   height: 100%;
   padding: 35px 40px 35px;
 }
@@ -25,7 +27,9 @@
   font-size: 80px;
 }
 .good_companies_img {
-  width: 40%;
+  min-width: 400px;
+  max-width: 520px;
+  width: 100%;
 }
 
 .good_companies_img > img {

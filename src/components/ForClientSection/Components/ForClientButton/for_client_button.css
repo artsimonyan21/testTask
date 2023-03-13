@@ -1,0 +1,30 @@
+.for_client_button {
+  height: 147px;
+  border-radius: 10px;
+  background-color: #14a800;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 15px;
+}
+
+.for_client_button:hover {
+  background-color: white;
+  transition: 0.2s;
+}
+.for_client_button:hover p {
+  color: #14a800;
+}
+.for_client_button:hover path {
+  fill: #14a800;
+}
+
+.for_client_button_title {
+  font-size: 30px;
+  color: white;
+}
+
+.for_client_butt_desc {
+  font-size: 16px;
+  color: white;
+}

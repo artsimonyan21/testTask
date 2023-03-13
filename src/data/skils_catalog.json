@@ -1,0 +1,41 @@
+{
+  "top_skills": "Top skills",
+  "trnding_skills": "Trending skills",
+  "top_skills_in_us": "Top skills in US",
+  "project_catalog": "Project Catalog",
+  "colum_1": [
+    "Data Entry Specialists",
+    "Video Editors",
+    "Data Analyst",
+    "Shopify Developer",
+    "Ruby on Rails Developer",
+    "Android Developer",
+    "Bookkeeper",
+    "Content Writer",
+    "Copywriter",
+    "Data Scientist",
+    "Front-End Developer",
+    "Game Developer",
+    "Graphic Designer",
+    "iOS Developer",
+    "Java Developer"
+  ],
+  "colum_2": [
+    "JavaScript Developer",
+    "Logo Designer",
+    "Mobile App Developer",
+    "PHP Developer",
+    "Python Developer",
+    "Resume Writer",
+    "SEO Expert",
+    "Social Media Manager",
+    "Software Developer",
+    "Software Engineer",
+    "Technical Writer",
+    "UI Designer",
+    "UX Designer",
+    "Virtual Assistant",
+    "Web Designer",
+    "Wordpress Developer"
+  ]
+}

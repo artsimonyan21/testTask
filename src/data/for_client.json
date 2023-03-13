@@ -3,16 +3,21 @@
   "title_1": "Find talent",
   "title_2": "your way",
   "description": "Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.",
-  "fist_button_title_1": "Post a job",
-  "fist_button_title_2": "and hire a pro",
-  "fist_button_description": "Talent Marketpleace",
-  "fist_button_description_svg": "",
-  "second_button_title_1": "Browse and",
-  "second_button_title_2": "buy projects",
-  "second_button_description": "Project catalog",
-  "second_button_description_svg": "Project catalog",
-  "last_button_title_1": "Let us help you",
-  "last_button_title_2": "find the right talentu",
-  "last_button_description": "Talent scout",
-  "last_button_description_svg": ""
+  "client_buttons": [
+    {
+      "button_title_1": "Post a job",
+      "button_title_2": "and hire a pro",
+      "button_description": "Talent Marketpleace"
+    },
+    {
+      "button_title_1": "Browse and",
+      "button_title_2": "buy projects",
+      "button_description": "Project catalog"
+    },
+    {
+      "button_title_1": "Let us help you",
+      "button_title_2": "find the right talentu",
+      "button_description": "Talent scout"
+    }
+  ]
 }
