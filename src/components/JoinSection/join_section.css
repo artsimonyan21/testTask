@@ -90,3 +90,16 @@
   animation: join_section_img_wrapper 20s cubic-bezier(0, 0, 0, 2) 0s infinite
     forwards;
 }
+
+@media screen and (max-width: 933px) {
+  .join_section_wrapper {
+    flex-direction: column;
+  }
+  .join_section_description_wrapper {
+    width: 100%;
+  }
+  .join_section_img_wrapper {
+    width: 100%;
+    background-size: 100%;
+  }
+}

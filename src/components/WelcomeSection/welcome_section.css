@@ -7,7 +7,7 @@
 }
 
 .welcome_section_description_wrapper {
-  width: 40%;
+  width: 500px;
   height: 100%;
   padding: 0 15px;
 }
@@ -60,4 +60,9 @@
 }
 .welcome_section_svg_content > img {
   margin-right: 30px;
+}
+@media screen and (max-width: 933px) {
+  .welcome_section_img_wrapper {
+    display: none;
+  }
 }
