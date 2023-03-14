@@ -11,9 +11,7 @@ const JoinSection = () => {
 
   return (
     <section className="join_section_wrapper">
-      <div className="join_section_img_wrapper">
-        alsfcaskncsnac ascnskalcnsklcn
-      </div>
+      <div className="join_section_img_wrapper"></div>
       <div className="join_section_description_wrapper">
         <h2>{data.title}</h2>
         <div className="join_section_subsections">

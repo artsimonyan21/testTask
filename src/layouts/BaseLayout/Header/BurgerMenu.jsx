@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const BurgerMenuItem = ({
   title,
   subItems,
@@ -15,7 +16,7 @@ const BurgerMenuItem = ({
         <h5>{title}</h5>
       </button>
       {isOpened && (
-        <ul>
+        <ul className="burger_item_content">
           {subItems?.map(({ title, desc }, index) => (
             <li key={index}>
               <h6>{title}</h6>
@@ -110,6 +111,9 @@ const BurgerMenu = () => {
             isOpened={activeDropdown === 3}
             handleOpenCloseDropdown={handleOpenCloseDropdown(3)}
           />
+          <div className="burger_menu_sign_in_wrapper">
+            <button>Sign in</button>
+          </div>
         </div>
       )}
     </div>

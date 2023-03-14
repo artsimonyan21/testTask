@@ -9,6 +9,7 @@ import SecondSubMenuContent from "./Components/SecondSubMenuContent/SecondSubMen
 import LastSubMenuContent from "./Components/LastSubMenuCcontent/LastSubMenuContent";
 
 import { ReactComponent as Pointer } from "../../../assets/pointer.svg";
+import { ReactComponent as Search } from "../../../assets/search_icon.svg";
 
 const Header = () => {
   const data = Utils.getSectionData("header_find_work_section");
@@ -148,6 +149,19 @@ const Header = () => {
           <p style={{ marginLeft: "20px" }}>Enterprise</p>
         </div>
         <div className="second_container"></div>
+      </div>
+      <div className="header_search_login_section">
+      <button className="header_sign_in_mobile">Sign in</button>
+
+        <Search className="search_icon_mobile" />
+        <div className="header_search_wrapper">
+          <Search className="search_icon" />
+          <input placeholder="Search" />
+        </div>
+        <div className="header_login_section">
+          <button>Log in</button>
+          <button>Sign in</button>
+        </div>
       </div>
     </div>
   );

@@ -5,13 +5,9 @@
   align-items: center;
 }
 
-.join_section_img_wrapper {
-  width: 70%;
-  height: 365px;
-}
-
 .join_section_description_wrapper {
   width: 100%;
+  padding-left: 30px;
 }
 
 .join_section_description_wrapper > h2 {
@@ -68,4 +64,29 @@
 .join_section_href_wrapper > :last-child {
   width: 181px;
   color: #108a00;
+}
+
+@keyframes join_section_img_wrapper {
+  0% {
+    background-image: url("https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,h_334/brontes/how-to-hire/work-with-best.png");
+  }
+  33% {
+    background-image: url("https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,h_334/brontes/how-to-hire/review-top-talent.png");
+  }
+  66% {
+    background-image: url("https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,h_334/brontes/how-to-hire/join-for-free.png");
+  }
+  100% {
+    background-image: url("https://res.cloudinary.com/upwork-cloud-acquisition-prod/image/upload/c_scale,h_334/brontes/how-to-hire/review-top-talent.png");
+  }
+}
+
+.join_section_img_wrapper {
+  width: 70%;
+  height: 365px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s ease-out;
+  animation: join_section_img_wrapper 20s cubic-bezier(0, 0, 0, 2) 0s infinite
+    forwards;
 }
