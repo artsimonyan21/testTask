@@ -4,6 +4,11 @@ import "./header.css";
 import Utils from "../../../utils";
 import { useState } from "react";
 import BurgerMenu from "./BurgerMenu";
+import FirstSubMenuContent from "./Components/FirstSuBMenuContent/FirstSubMenuContent";
+import SecondSubMenuContent from "./Components/SecondSubMenuContent/SecondSubMenuContent";
+import LastSubMenuContent from "./Components/LastSubMenuCcontent/LastSubMenuContent";
+
+import { ReactComponent as Pointer } from "../../../assets/pointer.svg";
 
 const Header = () => {
   const data = Utils.getSectionData("header_find_work_section");
@@ -28,7 +33,11 @@ const Header = () => {
                   }`}
                   onMouseOver={handleMenuDetailsHover(1)}
                 >
-                  <h5>"Post a job and hire a pro"</h5>
+                  <div>
+                    <h5>Post a job and hire a pro</h5>
+                    <p>Talent Marketplace</p>
+                  </div>
+                  <Pointer className="curent_item_pointer" />
                 </div>
                 <div
                   className={`current_item ${
@@ -36,7 +45,11 @@ const Header = () => {
                   }`}
                   onMouseOver={handleMenuDetailsHover(2)}
                 >
-                  <h5>"Post a job and hire a pro"</h5>
+                  <div>
+                    <h5>Browse and buy projects</h5>
+                    <p>Project Catalog</p>
+                  </div>
+                  <Pointer className="curent_item_pointer" />
                 </div>
                 <div
                   className={`current_item ${
@@ -44,16 +57,26 @@ const Header = () => {
                   }`}
                   onMouseOver={handleMenuDetailsHover(3)}
                 >
-                  <h5>"Post a job and hire a pro"</h5>
+                  <div>
+                    <h5>Browse and buy projects</h5>
+                    <p>Talent Scout</p>
+                  </div>
+                  <Pointer className="curent_item_pointer" />
                 </div>
               </div>
               <div className="submenu_conent_wrapper">
                 {activeEl === 1 ? (
-                  <div>1</div>
+                  <div>
+                    <FirstSubMenuContent />
+                  </div>
                 ) : activeEl === 2 ? (
-                  <div>2</div>
+                  <div>
+                    <SecondSubMenuContent />
+                  </div>
                 ) : (
-                  <div>3</div>
+                  <div>
+                    <LastSubMenuContent />
+                  </div>
                 )}
               </div>
             </div>

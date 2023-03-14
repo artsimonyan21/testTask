@@ -1,7 +1,6 @@
 .dropdown_container {
   display: flex;
   align-items: center;
-  background-color: yellow;
 }
 .base_dropdown_title {
   margin-left: 20px;
