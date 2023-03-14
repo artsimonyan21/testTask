@@ -4,7 +4,8 @@
   border-radius: 10px;
   background-color: #e4ebe4;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .for_ucraine_desc_wrapper {
@@ -34,4 +35,9 @@
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.for_ucraine_img_wrapper {
+  height: 100%;
+  display: flex;
 }

@@ -70,6 +70,9 @@ const AboutUpwork = () => {
             </div>
           </div>
         </div>
+        <div className="mobile_image">
+          <img src={data.img_src} alt="" />
+        </div>
       </div>
     </section>
   );

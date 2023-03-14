@@ -9,9 +9,10 @@ const ForClientButton = ({
 }) => {
   return (
     <button className="for_client_button">
-      <p className="for_client_button_title">{button_title_1}</p>
-      <p className="for_client_button_title">{button_title_2}</p>
-      <br />
+      <p className="for_client_button_title">
+        {button_title_1}
+        {button_title_2}
+      </p>
       <p className="for_client_butt_desc">
         {button_description} <sup>TM</sup> <Arrow />
       </p>

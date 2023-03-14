@@ -21,147 +21,156 @@ const Header = () => {
 
   return (
     <div className="header_wrapper">
-      <div className="first_container">
-        <BurgerMenu />
-        <Logo style={{ width: "82px" }} />
-        <div className="navlink_wrapper">
-          <BaseDropdown title="Find talent">
-            <div className="first_submenu_wrapper">
-              <div className="first_submenu_items">
-                <div
-                  className={`current_item ${
-                    activeEl === 1 ? "current_item_active" : ""
-                  }`}
-                  onMouseOver={handleMenuDetailsHover(1)}
-                >
-                  <div>
-                    <h5>Post a job and hire a pro</h5>
-                    <p>Talent Marketplace</p>
+      <div className="base_header_wrapper">
+        <div className="first_container">
+          <BurgerMenu />
+          <Logo style={{ width: "82px" }} />
+          <div className="navlink_wrapper">
+            <BaseDropdown title="Find talent">
+              <div className="first_submenu_wrapper">
+                <div className="first_submenu_items">
+                  <div
+                    className={`current_item ${
+                      activeEl === 1 ? "current_item_active" : ""
+                    }`}
+                    onMouseOver={handleMenuDetailsHover(1)}
+                  >
+                    <div>
+                      <h5>Post a job and hire a pro</h5>
+                      <p>Talent Marketplace</p>
+                    </div>
+                    <Pointer className="curent_item_pointer" />
                   </div>
-                  <Pointer className="curent_item_pointer" />
-                </div>
-                <div
-                  className={`current_item ${
-                    activeEl === 2 ? "current_item_active" : ""
-                  }`}
-                  onMouseOver={handleMenuDetailsHover(2)}
-                >
-                  <div>
-                    <h5>Browse and buy projects</h5>
-                    <p>Project Catalog</p>
+                  <div
+                    className={`current_item ${
+                      activeEl === 2 ? "current_item_active" : ""
+                    }`}
+                    onMouseOver={handleMenuDetailsHover(2)}
+                  >
+                    <div>
+                      <h5>Browse and buy projects</h5>
+                      <p>Project Catalog</p>
+                    </div>
+                    <Pointer className="curent_item_pointer" />
                   </div>
-                  <Pointer className="curent_item_pointer" />
-                </div>
-                <div
-                  className={`current_item ${
-                    activeEl === 3 ? "current_item_active" : ""
-                  }`}
-                  onMouseOver={handleMenuDetailsHover(3)}
-                >
-                  <div>
-                    <h5>Browse and buy projects</h5>
-                    <p>Talent Scout</p>
+                  <div
+                    className={`current_item ${
+                      activeEl === 3 ? "current_item_active" : ""
+                    }`}
+                    onMouseOver={handleMenuDetailsHover(3)}
+                  >
+                    <div>
+                      <h5>Browse and buy projects</h5>
+                      <p>Talent Scout</p>
+                    </div>
+                    <Pointer className="curent_item_pointer" />
                   </div>
-                  <Pointer className="curent_item_pointer" />
+                </div>
+                <div className="submenu_conent_wrapper">
+                  {activeEl === 1 ? (
+                    <div>
+                      <FirstSubMenuContent />
+                    </div>
+                  ) : activeEl === 2 ? (
+                    <div>
+                      <SecondSubMenuContent />
+                    </div>
+                  ) : (
+                    <div>
+                      <LastSubMenuContent />
+                    </div>
+                  )}
                 </div>
               </div>
-              <div className="submenu_conent_wrapper">
-                {activeEl === 1 ? (
+            </BaseDropdown>
+            <BaseDropdown title="Find work">
+              <div className="header_find_work">
+                <div>
+                  <h4>{data.title_1}</h4>
+                  <p>{data.description_1}</p>
+                </div>
+                <div>
+                  <h4>{data.title_2}</h4>
+                  <p>{data.description_2}</p>
+                </div>
+                <div>
+                  <h4>{data.title_3}</h4>
+                  <p>{data.description_3}</p>
+                </div>
+              </div>
+            </BaseDropdown>
+            <BaseDropdown title="Why uowork">
+              <div className="why_upwork_section">
+                <div className="why_upwork_first_secon_colum">
                   <div>
-                    <FirstSubMenuContent />
+                    <h4>Success stories</h4>
+                    <p>
+                      Discover how teams work strategically and grow together.
+                    </p>
                   </div>
-                ) : activeEl === 2 ? (
                   <div>
-                    <SecondSubMenuContent />
+                    <h4>How to hire</h4>
+                    <p>Learn about the different ways to get work done.</p>
                   </div>
-                ) : (
+                </div>
+                <div className="why_upwork_first_secon_colum">
                   <div>
-                    <LastSubMenuContent />
+                    <h4>Revievs</h4>
+                    <p>See what it’s like to collaborate on Upwork.</p>
                   </div>
-                )}
-              </div>
-            </div>
-          </BaseDropdown>
-          <BaseDropdown title="Find work">
-            <div className="header_find_work">
-              <div>
-                <h4>{data.title_1}</h4>
-                <p>{data.description_1}</p>
-              </div>
-              <div>
-                <h4>{data.title_2}</h4>
-                <p>{data.description_2}</p>
-              </div>
-              <div>
-                <h4>{data.title_3}</h4>
-                <p>{data.description_3}</p>
-              </div>
-            </div>
-          </BaseDropdown>
-          <BaseDropdown title="Why uowork">
-            <div className="why_upwork_section">
-              <div className="why_upwork_first_secon_colum">
-                <div>
-                  <h4>Success stories</h4>
-                  <p>
-                    Discover how teams work strategically and grow together.
-                  </p>
+                  <div>
+                    <h4>How to find work</h4>
+                    <p>Learn about how to grow your independent career.</p>
+                  </div>
                 </div>
-                <div>
-                  <h4>How to hire</h4>
-                  <p>Learn about the different ways to get work done.</p>
+                <div className="why_upwork_last_colum">
+                  <h4>Where work gets done</h4>
+                  <div>
+                    <p>Guides</p>
+                    <p>Getting Started as a Freelancer</p>
+                  </div>
+                  <div>
+                    <p>Guides</p>
+                    <p>Growing Your Freelance Career</p>
+                  </div>
+                  <div>
+                    <p>Guides</p>
+                    <p>Hiring & Working with Independent Talent</p>
+                  </div>
+                  <span>
+                    <a href="#">See Resources</a>
+                    <img
+                      src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/icon-arrow-link.aa81526a.svg"
+                      alt=""
+                    />
+                  </span>
                 </div>
               </div>
-              <div className="why_upwork_first_secon_colum">
-                <div>
-                  <h4>Revievs</h4>
-                  <p>See what it’s like to collaborate on Upwork.</p>
-                </div>
-                <div>
-                  <h4>How to find work</h4>
-                  <p>Learn about how to grow your independent career.</p>
-                </div>
-              </div>
-              <div className="why_upwork_last_colum">
-                <h4>Where work gets done</h4>
-                <div>
-                  <p>Guides</p>
-                  <p>Getting Started as a Freelancer</p>
-                </div>
-                <div>
-                  <p>Guides</p>
-                  <p>Growing Your Freelance Career</p>
-                </div>
-                <div>
-                  <p>Guides</p>
-                  <p>Hiring & Working with Independent Talent</p>
-                </div>
-                <span>
-                  <a href="#">See Resources</a>
-                  <img
-                    src="https://www.upwork.com/static/assets/TopNavSsi/visitor-v2/img/icon-arrow-link.aa81526a.svg"
-                    alt=""
-                  />
-                </span>
-              </div>
-            </div>
-          </BaseDropdown>
-          <p style={{ marginLeft: "20px" }}>Enterprise</p>
+            </BaseDropdown>
+            <p style={{ marginLeft: "20px" }}>Enterprise</p>
+          </div>
+          <div className="second_container"></div>
         </div>
-        <div className="second_container"></div>
-      </div>
-      <div className="header_search_login_section">
-      <button className="header_sign_in_mobile">Sign in</button>
+        <div className="header_search_login_section">
+          <button className="header_sign_in_mobile">Sign in</button>
 
-        <Search className="search_icon_mobile" />
-        <div className="header_search_wrapper">
-          <Search className="search_icon" />
-          <input placeholder="Search" />
+          <Search className="search_icon_mobile" />
+          <div className="header_search_wrapper">
+            <Search className="search_icon" />
+            <input placeholder="Search" />
+          </div>
+          <div className="header_login_section">
+            <button>Log in</button>
+            <button>Sign in</button>
+          </div>
         </div>
-        <div className="header_login_section">
-          <button>Log in</button>
-          <button>Sign in</button>
-        </div>
+      </div>
+      <div className="sub_header">
+        <button>Development & IT</button>
+        <button>Design & Creative</button>
+        <button>Sales & Marketing</button>
+        <button>Writing & Translation</button>
+        <button>Admin & Customer Support</button>
       </div>
     </div>
   );

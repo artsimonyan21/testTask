@@ -72,3 +72,22 @@
   cursor: pointer;
   font-size: 18px;
 }
+
+@media screen and (max-width: 1000px) {
+  .find_work_section {
+    flex-direction: column;
+    grid-template-columns: 12fr;
+  }
+  .find_work_desription_wrapper {
+    height: fit-content;
+    padding-bottom: 32px;
+  }
+  .find_work_img_wrapper > img {
+    height: 375px;
+    object-fit: cover;
+  }
+  .find_work_title > h2 {
+    font-size: 42px;
+    margin-bottom: 12px;
+  }
+}

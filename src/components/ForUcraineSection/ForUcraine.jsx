@@ -1,5 +1,7 @@
 import "./for_ucraine.css";
 
+import { ReactComponent as HelpUcrainIcon } from "../../assets/ukraine-help.svg";
+
 import Utils from "../../utils";
 
 const ForUcraine = () => {
@@ -12,7 +14,7 @@ const ForUcraine = () => {
         <a href="#">{data.butt_title}</a>
       </div>
       <div className="for_ucraine_img_wrapper">
-        <img src={data.img_src} alt="" />
+        <HelpUcrainIcon />
       </div>
     </section>
   );

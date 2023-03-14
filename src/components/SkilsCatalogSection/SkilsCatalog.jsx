@@ -13,27 +13,29 @@ const SkilsCatalog = () => {
         <h3>{data.top_skills_in_us}</h3>
         <h3>{data.project_catalog}</h3>
       </div>
-      <div className="skils_colum_1">
-        <ul className="ul_catalog">
-          {data.colum_1.map((el, index) => {
-            return (
-              <li key={index}>
-                <a href="#">{el}</a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div className="skils_colum_2">
-        <ul className="ul_catalog">
-          {data.colum_2.map((el, index) => {
-            return (
-              <li key={index}>
-                <a href="#">{el}</a>
-              </li>
-            );
-          })}
-        </ul>
+      <div className="fix_wrapper">
+        <div className="skils_colum_1">
+          <ul className="ul_catalog">
+            {data.colum_1.map((el, index) => {
+              return (
+                <li key={index}>
+                  <a href="#">{el}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <div className="skils_colum_2">
+          <ul className="ul_catalog">
+            {data.colum_2.map((el, index) => {
+              return (
+                <li key={index}>
+                  <a href="#">{el}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </section>
   );
