@@ -45,9 +45,11 @@
   padding-left: 32px;
 }
 .navlink_wrapper {
+  height: 100%;
   display: flex;
   align-items: center;
   margin-left: 32px;
+  background-color: #1f57c3;
 }
 
 .header_find_work {
