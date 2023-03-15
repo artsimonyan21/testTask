@@ -1,5 +1,6 @@
 .footer_section {
   width: 98%;
+  height: fit-content;
   background-color: #001e00;
   border-radius: 10px;
   padding: 96px 20px 96px 20px;
@@ -95,4 +96,102 @@
   color: white;
   text-decoration: none;
   margin-right: 16px;
+}
+
+.burger_item_wrapper_footer {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 8px;
+  display: none;
+}
+
+.burger_item_title_wrapper_footer {
+  width: 100%;
+  height: 64px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  text-align: left;
+}
+
+.burger_item_title_wrapper_footer > h5 {
+  font-size: 16px;
+  color: white;
+}
+
+.burger_item_content_footer {
+  list-style-type: none;
+  width: 100%;
+  padding: 15px;
+}
+.burger_item_content_footer > li {
+  margin-bottom: 26px;
+}
+.burger_item_content_footer > li > h6 {
+  font-size: 16px;
+  color: white;
+}
+
+.burger_item_content_footer > li > p {
+  color: #9aaa97;
+  margin-top: 8px;
+}
+
+.burger_menu_wrapper_footer {
+  width: 100%;
+  margin-right: 16px;
+}
+
+.burger_menu_wrapper {
+  width: 24px;
+  height: 20px;
+  margin-right: 16px;
+}
+.burger_menu {
+  width: 100vw;
+  height: calc(100vh - 56px);
+  position: fixed;
+  left: 0;
+  top: 56px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: white;
+}
+
+.foter_icons_desc_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 623px) {
+  .footer_section {
+    padding: 20px;
+  }
+  .footer_columes_wrapper {
+    display: none;
+  }
+  .burger_item_wrapper_footer {
+    display: block;
+  }
+  .footer_icons {
+    flex-direction: column;
+    height: 100%;
+    margin-top: 64px;
+  }
+  .footer_icons > div {
+    margin-bottom: 32px;
+  }
+  .footer_icons > div > div {
+    display: none;
+  }
+  .foter_icons_desc_mobile {
+    font-size: 20px;
+    color: white;
+    display: block;
+  }
+  .footer_year_about {
+    flex-direction: column;
+  }
+  .footer_year_about > a {
+    margin-top: 16px;
+  }
 }

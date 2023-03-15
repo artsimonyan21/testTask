@@ -10,6 +10,8 @@ import { ReactComponent as Instagaram } from "../../../assets/instagram.svg";
 import { ReactComponent as AppStore } from "../../../assets/appStore.svg";
 import { ReactComponent as PlayMarket } from "../../../assets/playMarket.svg";
 
+import FooterMobile from "./FooterMobile";
+
 const Footer = () => {
   const data = Utils.getSectionData("footer");
   console.log("data", data);
@@ -69,7 +71,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <FooterMobile />
         <div className="footer_icons">
+          <div className="foter_icons_desc_mobile">{data.follow_us}</div>
+
           <div>
             <div>{data.follow_us}</div>
             <a href="#">
@@ -88,6 +93,7 @@ const Footer = () => {
               <Instagaram />
             </a>
           </div>
+          <div className="foter_icons_desc_mobile">{data.mobile_app}</div>
 
           <div>
             <div>{data.mobile_app}</div>
